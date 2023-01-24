@@ -1,4 +1,4 @@
-from src.main import *
+from src.domain.agedBrie import *
 
 import pytest 
 
@@ -38,19 +38,40 @@ def test_AgedBrie(stocktaking):
     assert repr(dayThree) == repr(stocktaking)
 
     stocktaking.updateQuality()
+    stocktaking.updateQuality()
     assert repr(dayFive) == repr(stocktaking)
 
+    stocktaking.updateQuality()
+    stocktaking.updateQuality()
+    stocktaking.updateQuality()
+    stocktaking.updateQuality()
     stocktaking.updateQuality()
     assert repr(dayTen) == repr(stocktaking)
 
     stocktaking.updateQuality()
+    stocktaking.updateQuality()
+    stocktaking.updateQuality()
+    stocktaking.updateQuality()
+    stocktaking.updateQuality()
     assert repr(dayFifteen) == repr(stocktaking)
 
+    stocktaking.updateQuality()
+    stocktaking.updateQuality()
+    stocktaking.updateQuality()
+    stocktaking.updateQuality()
     stocktaking.updateQuality()
     assert repr(dayTwenty) == repr(stocktaking)
 
     stocktaking.updateQuality()
+    stocktaking.updateQuality()
+    stocktaking.updateQuality()
+    stocktaking.updateQuality()
+    stocktaking.updateQuality()
     assert repr(dayTwentyFive) == repr(stocktaking)
 
+    stocktaking.updateQuality()
+    stocktaking.updateQuality()
+    stocktaking.updateQuality()
+    stocktaking.updateQuality()
     stocktaking.updateQuality()
     assert repr(dayThirty) == repr(stocktaking)
