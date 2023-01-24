@@ -1,4 +1,4 @@
-from src.main import *
+from src.domain.conjured import *
 
 import pytest 
 
@@ -40,20 +40,41 @@ def test_ConjuredDexterity(stocktakingDexterity):
     assert repr(dayThree) == repr(stocktakingDexterity)
 
     stocktakingDexterity.updateQuality()
+    stocktakingDexterity.updateQuality()
     assert repr(dayFive) == repr(stocktakingDexterity)
 
+    stocktakingDexterity.updateQuality()
+    stocktakingDexterity.updateQuality()
+    stocktakingDexterity.updateQuality()
+    stocktakingDexterity.updateQuality()
     stocktakingDexterity.updateQuality()
     assert repr(dayTen) == repr(stocktakingDexterity)
 
     stocktakingDexterity.updateQuality()
+    stocktakingDexterity.updateQuality()
+    stocktakingDexterity.updateQuality()
+    stocktakingDexterity.updateQuality()
+    stocktakingDexterity.updateQuality()
     assert repr(dayFifteen) == repr(stocktakingDexterity)
 
+    stocktakingDexterity.updateQuality()
+    stocktakingDexterity.updateQuality()
+    stocktakingDexterity.updateQuality()
+    stocktakingDexterity.updateQuality()
     stocktakingDexterity.updateQuality()
     assert repr(dayTwenty) == repr(stocktakingDexterity)
 
     stocktakingDexterity.updateQuality()
+    stocktakingDexterity.updateQuality()
+    stocktakingDexterity.updateQuality()
+    stocktakingDexterity.updateQuality()
+    stocktakingDexterity.updateQuality()
     assert repr(dayTwentyFive) == repr(stocktakingDexterity)
 
+    stocktakingDexterity.updateQuality()
+    stocktakingDexterity.updateQuality()
+    stocktakingDexterity.updateQuality()
+    stocktakingDexterity.updateQuality()
     stocktakingDexterity.updateQuality()
     assert repr(dayThirty) == repr(stocktakingDexterity)
 
@@ -92,21 +113,42 @@ def test_ConjuredMana(stocktakingMana):
 
     stocktakingMana.updateQuality()
     assert repr(dayThree) == repr(stocktakingMana)
-
+    
+    stocktakingMana.updateQuality()
     stocktakingMana.updateQuality()
     assert repr(dayFive) == repr(stocktakingMana)
 
     stocktakingMana.updateQuality()
+    stocktakingMana.updateQuality()
+    stocktakingMana.updateQuality()
+    stocktakingMana.updateQuality()
+    stocktakingMana.updateQuality()
     assert repr(dayTen) == repr(stocktakingMana)
 
+    stocktakingMana.updateQuality()
+    stocktakingMana.updateQuality()
+    stocktakingMana.updateQuality()
+    stocktakingMana.updateQuality()
     stocktakingMana.updateQuality()
     assert repr(dayFifteen) == repr(stocktakingMana)
 
     stocktakingMana.updateQuality()
+    stocktakingMana.updateQuality()
+    stocktakingMana.updateQuality()
+    stocktakingMana.updateQuality()
+    stocktakingMana.updateQuality()
     assert repr(dayTwenty) == repr(stocktakingMana)
 
     stocktakingMana.updateQuality()
+    stocktakingMana.updateQuality()
+    stocktakingMana.updateQuality()
+    stocktakingMana.updateQuality()
+    stocktakingMana.updateQuality()
     assert repr(dayTwentyFive) == repr(stocktakingMana)
 
+    stocktakingMana.updateQuality()
+    stocktakingMana.updateQuality()
+    stocktakingMana.updateQuality()
+    stocktakingMana.updateQuality()
     stocktakingMana.updateQuality()
     assert repr(dayThirty) == repr(stocktakingMana)

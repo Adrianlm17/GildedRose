@@ -1,11 +1,11 @@
-from src.main import *
+from src.domain.backstagePasses import *
 
 import pytest 
 
 
 
 @pytest.fixture
-def stocktakingFirstFirst():
+def stocktakingFirst():
 
     item = BackstagePasses("Backstage passes to a TAFKAL80ETC concert", 15, 20)
     return item
@@ -38,20 +38,41 @@ def test_BackstagePassesFirst(stocktakingFirst):
     assert repr(dayThree) == repr(stocktakingFirst)
 
     stocktakingFirst.updateQuality()
+    stocktakingFirst.updateQuality()
     assert repr(dayFive) == repr(stocktakingFirst)
 
+    stocktakingFirst.updateQuality()
+    stocktakingFirst.updateQuality()
+    stocktakingFirst.updateQuality()
+    stocktakingFirst.updateQuality()
     stocktakingFirst.updateQuality()
     assert repr(dayTen) == repr(stocktakingFirst)
 
     stocktakingFirst.updateQuality()
+    stocktakingFirst.updateQuality()
+    stocktakingFirst.updateQuality()
+    stocktakingFirst.updateQuality()
+    stocktakingFirst.updateQuality()
     assert repr(dayFifteen) == repr(stocktakingFirst)
 
+    stocktakingFirst.updateQuality()
+    stocktakingFirst.updateQuality()
+    stocktakingFirst.updateQuality()
+    stocktakingFirst.updateQuality()
     stocktakingFirst.updateQuality()
     assert repr(dayTwenty) == repr(stocktakingFirst)
 
     stocktakingFirst.updateQuality()
+    stocktakingFirst.updateQuality()
+    stocktakingFirst.updateQuality()
+    stocktakingFirst.updateQuality()
+    stocktakingFirst.updateQuality()
     assert repr(dayTwentyFive) == repr(stocktakingFirst)
 
+    stocktakingFirst.updateQuality()
+    stocktakingFirst.updateQuality()
+    stocktakingFirst.updateQuality()
+    stocktakingFirst.updateQuality()
     stocktakingFirst.updateQuality()
     assert repr(dayThirty) == repr(stocktakingFirst)
 
@@ -77,7 +98,7 @@ def test_BackstagePassesSecond(stocktakingSecond):
     dayTwo        = BackstagePasses("Backstage passes to a TAFKAL80ETC concert", 8, 50)
     dayThree      = BackstagePasses("Backstage passes to a TAFKAL80ETC concert", 7, 50)
     dayFive       = BackstagePasses("Backstage passes to a TAFKAL80ETC concert", 5, 50)
-    dayTen        = BackstagePasses("Backstage passes to a TAFKAL80ETC concert", 5, 35)
+    dayTen        = BackstagePasses("Backstage passes to a TAFKAL80ETC concert", 0, 50)
     dayFifteen    = BackstagePasses("Backstage passes to a TAFKAL80ETC concert", -5, 0)
     dayTwenty     = BackstagePasses("Backstage passes to a TAFKAL80ETC concert", -10, 0)
     dayTwentyFive = BackstagePasses("Backstage passes to a TAFKAL80ETC concert", -15, 0)
@@ -94,20 +115,41 @@ def test_BackstagePassesSecond(stocktakingSecond):
     assert repr(dayThree) == repr(stocktakingSecond)
 
     stocktakingSecond.updateQuality()
+    stocktakingSecond.updateQuality()
     assert repr(dayFive) == repr(stocktakingSecond)
 
+    stocktakingSecond.updateQuality()
+    stocktakingSecond.updateQuality()
+    stocktakingSecond.updateQuality()
+    stocktakingSecond.updateQuality()
     stocktakingSecond.updateQuality()
     assert repr(dayTen) == repr(stocktakingSecond)
 
     stocktakingSecond.updateQuality()
+    stocktakingSecond.updateQuality()
+    stocktakingSecond.updateQuality()
+    stocktakingSecond.updateQuality()
+    stocktakingSecond.updateQuality()
     assert repr(dayFifteen) == repr(stocktakingSecond)
 
+    stocktakingSecond.updateQuality()
+    stocktakingSecond.updateQuality()
+    stocktakingSecond.updateQuality()
+    stocktakingSecond.updateQuality()
     stocktakingSecond.updateQuality()
     assert repr(dayTwenty) == repr(stocktakingSecond)
 
     stocktakingSecond.updateQuality()
+    stocktakingSecond.updateQuality()
+    stocktakingSecond.updateQuality()
+    stocktakingSecond.updateQuality()
+    stocktakingSecond.updateQuality()
     assert repr(dayTwentyFive) == repr(stocktakingSecond)
 
+    stocktakingSecond.updateQuality()
+    stocktakingSecond.updateQuality()
+    stocktakingSecond.updateQuality()
+    stocktakingSecond.updateQuality()
     stocktakingSecond.updateQuality()
     assert repr(dayThirty) == repr(stocktakingSecond)
 
@@ -150,19 +192,40 @@ def test_BackstagePassesThird(stocktakingThird):
     assert repr(dayThree) == repr(stocktakingThird)
 
     stocktakingThird.updateQuality()
+    stocktakingThird.updateQuality()
     assert repr(dayFive) == repr(stocktakingThird)
 
+    stocktakingThird.updateQuality()
+    stocktakingThird.updateQuality()
+    stocktakingThird.updateQuality()
+    stocktakingThird.updateQuality()
     stocktakingThird.updateQuality()
     assert repr(dayTen) == repr(stocktakingThird)
 
     stocktakingThird.updateQuality()
+    stocktakingThird.updateQuality()
+    stocktakingThird.updateQuality()
+    stocktakingThird.updateQuality()
+    stocktakingThird.updateQuality()
     assert repr(dayFifteen) == repr(stocktakingThird)
 
+    stocktakingThird.updateQuality()
+    stocktakingThird.updateQuality()
+    stocktakingThird.updateQuality()
+    stocktakingThird.updateQuality()
     stocktakingThird.updateQuality()
     assert repr(dayTwenty) == repr(stocktakingThird)
 
     stocktakingThird.updateQuality()
+    stocktakingThird.updateQuality()
+    stocktakingThird.updateQuality()
+    stocktakingThird.updateQuality()
+    stocktakingThird.updateQuality()
     assert repr(dayTwentyFive) == repr(stocktakingThird)
 
+    stocktakingThird.updateQuality()
+    stocktakingThird.updateQuality()
+    stocktakingThird.updateQuality()
+    stocktakingThird.updateQuality()
     stocktakingThird.updateQuality()
     assert repr(dayThirty) == repr(stocktakingThird)
