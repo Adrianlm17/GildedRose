@@ -12,7 +12,7 @@ class Conjured(NormalItem):
 
 
 
-    def setQuality(self):
+    def updateQuality(self):
         
         if self.sellIn >= 0:
             
