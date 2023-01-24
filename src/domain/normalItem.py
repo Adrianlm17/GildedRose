@@ -20,7 +20,7 @@ class NormalItem(Item):
 
     def setQuality(self, price):
 
-        if self.quality + price > 50:
+        if self.quality + price >= 50:
 
             self.quality = 50
 

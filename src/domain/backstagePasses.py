@@ -14,9 +14,14 @@ class BackstagePasses(NormalItem):
 
     def updateQuality(self):
 
-        if self.sellIn <= 10:
+        if self.sellIn < 0:
 
-            self.setQuality(+2)
+            self.quality = 0
+        
+        
+        elif self.sellIn == 0:
+
+            self.setQuality(50)
         
 
         elif self.sellIn <= 5:
@@ -24,10 +29,10 @@ class BackstagePasses(NormalItem):
             self.setQuality(+3)
 
 
-        elif self.sellIn < 0:
+        elif self.sellIn <= 10:
 
-            self.quality = 0
-        
+            self.setQuality(+2)
+
 
         else:
 
