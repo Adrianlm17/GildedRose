@@ -1,8 +1,5 @@
 # Kata Gilded Rose
 
-
-This kata is presented by our teacher: [dfleca](https://github.com/dfleta/gilded-rose-kata-java)
-
 ![Gilded Rose](./img/Gilded_Rose.jpg)
 
 
